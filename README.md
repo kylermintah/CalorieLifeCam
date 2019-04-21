@@ -19,9 +19,9 @@ We found ourselves embroiled in setting up low-level espressif software, OS envi
 
 Up until this point we had been using an ArduCam which had all its support and libraries based on the arduino library. We spent a lot of time rewriting the Arduino libraries into our own libraries in pure C/C++ and while we feel we were close to acheiving this, the endeavour proved to take up too much time. Instead of reinventing the wheel, we decided to shift focus for week 2.
 
-### Circuit End of Week 1
-
 ![Image](docs/IMG-20190409-WA0017.jpeg)
+
+### Circuit End of Week 1
 
 ## Week 2 (4/15/19)
 
@@ -33,9 +33,9 @@ We switched cameras from ArduCam to a much more adaptable OV7670 w/out FIFO and 
 
 ![Image](docs/april21circuit.jpg)
 
-We setup a hotspot on a phone (as a user would) and connected our system to the network. We relayed the image to  a locally hosted webserver for now. We hope to pull the image for processing using dedicated machine learning libraries to determine whether the patient has captured an image of food or not.
+### Circuit End of Week 2
 
-## Circuit End of Week 2
+We setup a hotspot on a phone (as a user would) and connected our system to the network. We relayed the image to  a locally hosted webserver for now. We hope to pull the image for processing using dedicated machine learning libraries to determine whether the patient has captured an image of food or not.
 
 ![Image](docs/20190421_155116.jpg)
 
