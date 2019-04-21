@@ -13,9 +13,9 @@ A large amount of our time was dominated by learning to use and configure our ES
 
 ![Image](docs/makemenuconfig.jpeg)
 
- We found ourselves embroiled in setting up low-level espressif software, OS environment variables, resourse paths and more in an effort to be able to build and flash our C/C++ code which was dependent on the [esp-idf libraries](https://github.com/espressif/esp-idf). After much effort & error, we managed to configure our laptops to interface with the ESP32 and run a simple "Hello World" script.
+We found ourselves embroiled in setting up low-level espressif software, OS environment variables, resourse paths and more in an effort to be able to build and flash our C/C++ code which was dependent on the [esp-idf libraries](https://github.com/espressif/esp-idf). After much effort & error, we managed to configure our laptops to interface with the ESP32 and run a simple "Hello World" script.
 
-Up until this point we had been using an ArduCam which had all its support and libraries based on the arduino library. We spent a lot of time writing our own libraries in pure C but to no avail. This major time consumption lead us to shift focus in week 2.
+Up until this point we had been using an ArduCam which had all its support and libraries based on the arduino library. We spent a lot of time rewriting the Arduino libraries into our own libraries in pure C/C++ and while we feel we were close to acheiving this, the endeavour proved to take up too much time. Instead of reinventing the wheel, we decided to shift focus for week 2.
 
 **Circuit End of Week 1**
 
@@ -23,7 +23,7 @@ Up until this point we had been using an ArduCam which had all its support and l
 
 ### Week 2 (4/15/19)
 
-We then went on to learn how to use the UART Rx/Tx pins to interface a Razor IMU with the ESP32. After learning our device pinout (as there seem to be a couple of ESP32 versions out there) we were able to read orientation data straight from our IMU which will be vital for us in implementing our 'deep sleep' mode.
+Taking a break from the camera, we  went on to learn how to use the UART Rx/Tx pins to interface a Razor IMU with the ESP32. After mapping our device pinout (as there seem to be a couple of ESP32 models out there with different pinouts) we were able to read orientation data straight from our IMU which will help us implement our 'deep sleep' mode based on device orientation.
 
 ![Image](docs/20190421_152900.gif)
 
@@ -37,7 +37,7 @@ We setup a hotspot on a phone (as a user would) and connected our system to the 
 
 ![Image](docs/20190421_155116.jpg)
 
-While we were able to successfully capture images with using DMA, the images came out discoloured. We postulate this could be happening for a few reasons which we've narrowed down to the following:
+While we were able to successfully capture images using DMA, the images came out discoloured unless intense light was shone on the subject. We postulate this could be happening for a few reasons which we've narrowed down to the following:
 
 - **Lack of FIFO:** from what we've read online, using the OV7670 without FIFO does not produce the best picture quality
 - **Long Wires:** We have a very long path of wires until they finally reach their destination. They all could be acting as antennas. Shortening these connections might increase image quality.
