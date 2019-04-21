@@ -8,7 +8,7 @@ This project is maintained by [Ransford Antwi](https://github.com/masterford) & 
 We are building a miniature camera that serves as a wearable dietary documentation aid for patients with nutritional needs. The device uploads photos it takes to a webserver where the photos are filtered for food
 
 # Blog
-### Week 1 (4/8/19)
+## Week 1 (4/8/19)
 ![Image](docs/20190421_135823.gif)
 
 A large amount of our time was dominated by learning to use and configure our ESP32.
@@ -19,11 +19,11 @@ We found ourselves embroiled in setting up low-level espressif software, OS envi
 
 Up until this point we had been using an ArduCam which had all its support and libraries based on the arduino library. We spent a lot of time rewriting the Arduino libraries into our own libraries in pure C/C++ and while we feel we were close to acheiving this, the endeavour proved to take up too much time. Instead of reinventing the wheel, we decided to shift focus for week 2.
 
-**Circuit End of Week 1**
+### Circuit End of Week 1
 
 ![Image](docs/IMG-20190409-WA0017.jpeg)
 
-### Week 2 (4/15/19)
+## Week 2 (4/15/19)
 
 Taking a break from the camera, we  went on to learn how to use the UART Rx/Tx pins to interface a Razor IMU with the ESP32. After mapping our device pinout (as there seem to be a couple of ESP32 models out there with different pinouts) we were able to read orientation data straight from our IMU which will help us implement our 'deep sleep' mode based on device orientation.
 
@@ -35,7 +35,7 @@ We switched cameras from ArduCam to a much more adaptable OV7670 w/out FIFO and 
 
 We setup a hotspot on a phone (as a user would) and connected our system to the network. We relayed the image to  a locally hosted webserver for now. We hope to pull the image for processing using dedicated machine learning libraries to determine whether the patient has captured an image of food or not.
 
-**Circuit End of Week 1**
+## Circuit End of Week 2
 
 ![Image](docs/20190421_155116.jpg)
 
@@ -48,9 +48,9 @@ While we were able to successfully capture images using DMA, the images came out
 
 In any case, we have ordered an ESP32 dedicated camera that hopefully we will be able to integrate soon.
 
-### Week 3 (4/22/19)
+## Week 3 (4/22/19)
 
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble reaching us? Check out our [website](https:www.silblu.com) or [contact us](kmintah@seas.upenn.edu) and we’ll help you sort it out.
