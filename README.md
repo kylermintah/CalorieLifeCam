@@ -19,9 +19,10 @@ We found ourselves embroiled in setting up low-level espressif software, OS envi
 
 Up until this point we had been using an ArduCam which had all its support and libraries based on the arduino library. We spent a lot of time rewriting the Arduino libraries into our own libraries in pure C/C++ and while we feel we were close to acheiving this, the endeavour proved to take up too much time. Instead of reinventing the wheel, we decided to shift focus for week 2.
 
+### Circuit End of Week 1
 ![Image](docs/IMG-20190409-WA0017.jpeg)
 
-### Circuit End of Week 1
+
 
 ## Week 2 (4/15/19)
 
@@ -31,9 +32,9 @@ Taking a break from the camera, we  went on to learn how to use the UART Rx/Tx p
 
 We switched cameras from ArduCam to a much more adaptable OV7670 w/out FIFO and finally managed to process our image! This camera only has minimal dependencies on the Arduino library as opposed to the ArduCam. We are still awaiting the shipment of an ESP32 dedicated camera.
 
+### Circuit End of Week 2
 ![Image](docs/april21circuit.jpg)
 
-### Circuit End of Week 2
 
 We setup a hotspot on a phone (as a user would) and connected our system to the network. We relayed the image to  a locally hosted webserver for now. We hope to pull the image for processing using dedicated machine learning libraries to determine whether the patient has captured an image of food or not.
 
