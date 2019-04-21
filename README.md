@@ -33,9 +33,9 @@ We setup a hotspot on a phone (as a user would) and connected our system to the 
 
 While we were able to successfully capture images with using DMA, the images came out discoloured. We postulate this could be happening for a few reasons which we've narrowed down to the following:
 
-- Lack of FIFO: from what we've read online, using the OV7670 without FIFO does not produce the best picture quality
-- Our connections are too long: We have a very long path of wires until they finally reach their destination. They all could be acting as antennas. Shortening these connections might increase image quality.
-- The camera module could be damaged: This camera has been circulating Detkin for quite some time.
+- **Lack of FIFO:** from what we've read online, using the OV7670 without FIFO does not produce the best picture quality
+- **Long Wires:** We have a very long path of wires until they finally reach their destination. They all could be acting as antennas. Shortening these connections might increase image quality.
+- **Damaged Module:** This camera has been circulating Detkin for quite some time.
 
 In any case, we have ordered an ESP32 dedicated camera that hopefully we will be able to integrate soon.
 
