@@ -1,6 +1,6 @@
 # ESE 350 Project
 
-This project is maintained by [Ransford Antwi](https://github.com/masterford) & [Kyler Mintah](https://github.com/kylermintah)
+This project is maintained by [Kyler Mintah](https://github.com/kylermintah) & [Ransford Antwi](https://github.com/masterford)
 
 # Overview
 ![Image](docs/20190421_041634.jpg)
@@ -54,4 +54,4 @@ In any case, we have ordered an ESP32 dedicated camera that hopefully we will be
 
 ### Support or Contact
 
-Having trouble reaching us? Check out our [website](https:www.silblu.com) or [contact us](kmintah@seas.upenn.edu) and we’ll help you sort it out.
+Having trouble reaching us? Check out our [website](https://www.silblu.com) or [contact us](mailto:kmintah@seas.upenn.edu) and we’ll help you sort it out.
