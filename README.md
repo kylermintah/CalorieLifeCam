@@ -41,6 +41,7 @@ While we were able to successfully capture images using DMA, the images came out
 
 - **Lack of FIFO:** from what we've read online, using the OV7670 without FIFO does not produce the best picture quality
 - **Long Wires:** We have a very long path of wires until they finally reach their destination. They all could be acting as antennas. Shortening these connections might increase image quality.
+- **Current Imbalance:** We might be using an illadvised pull-up resistor combination that is incorrectly balancing the output.
 - **Damaged Module:** This camera has been circulating Detkin for quite some time.
 
 In any case, we have ordered an ESP32 dedicated camera that hopefully we will be able to integrate soon.
