@@ -1,11 +1,13 @@
 # ESE 350 Project
 
-## Project Overview
+This project is maintained by [Ransford Antwi](https://github.com/masterford) & [Kyler Mintah](https://github.com/kylermintah)
+
+# Overview
 ![Image](docs/20190421_041634.jpg)
 
 We are building a miniature camera that serves as a wearable dietary documentation aid for patients with nutritional needs. The device uploads photos it takes to a webserver where the photos are filtered for food
 
-## Blog
+# Blog
 ### Week 1 (4/8/19)
 ![Image](docs/20190421_135823.gif)
 
