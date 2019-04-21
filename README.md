@@ -11,7 +11,7 @@ We are building a miniature camera that serves as a wearable dietary documentati
 
 A large amount of our time was dominated by learning to use and configure our ESP32.
 
-![Image](docs/IMG-20190416-WA0004.jpeg)
+![Image](docs/makemenuconfig.jpeg)
 
  We found ourselves embroiled in setting up low-level espressif software, OS environment variables, resourse paths and more in an effort to be able to build and flash our C/C++ code which was dependent on the [esp-idf libraries](https://github.com/espressif/esp-idf). After much effort & error, we managed to configure our laptops to interface with the ESP32 and run a simple "Hello World" script.
 
