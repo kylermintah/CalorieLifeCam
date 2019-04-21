@@ -18,6 +18,7 @@ A large amount of our time was dominated by learning to use and configure our ES
 Up until this point we had been using an ArduCam which had all its support and libraries based on the arduino library. We spent a lot of time writing our own libraries in pure C but to no avail. This major time consumption lead us to shift focus in week 2.
 
 **Circuit End of Week 1**
+
 ![Image](docs/IMG-20190409-WA0017.jpeg)
 
 ### Week 2 (4/15/19)
@@ -31,6 +32,8 @@ We switched cameras from ArduCam to a much more adaptable OV7670 w/out FIFO and 
 ![Image](docs/april21circuit.jpg)
 
 We setup a hotspot on a phone (as a user would) and connected our system to the network. We relayed the image to  a locally hosted webserver for now. We hope to pull the image for processing using dedicated machine learning libraries to determine whether the patient has captured an image of food or not.
+
+**Circuit End of Week 1**
 
 ![Image](docs/20190421_155116.jpg)
 
