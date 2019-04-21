@@ -8,6 +8,7 @@ We are building a miniature camera that serves as a wearable dietary documentati
 ## Blog
 ### Week 1 (4/8/19)
 ![Image](docs/20190421_135823.gif)
+
 A large amount of our time was dominated by learning to use and configure our ESP32. We found ourselves embroiled in setting up low-level espressif software, OS environment variables, resourse paths and more in an effort to be able to flash C/C++ code to our MCU. After much effort & error, we managed to configure our laptops to interface with the ESP32 and run a simple "Hello World" script.
 
 ![Image](docs/VID-20190419-WA0000_1_1.gif)
