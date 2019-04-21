@@ -17,6 +17,9 @@ A large amount of our time was dominated by learning to use and configure our ES
 
 Up until this point we had been using an ArduCam which had all its support and libraries based on the arduino library. We spent a lot of time writing our own libraries in pure C but to no avail. This major time consumption lead us to shift focus in week 2.
 
+**Circuit End of Week 1**
+![Image](docs/IMG-20190409-WA0017.jpeg)
+
 ### Week 2 (4/15/19)
 
 We then went on to learn how to use the UART Rx/Tx pins to interface a Razor IMU with the ESP32. After learning our device pinout (as there seem to be a couple of ESP32 versions out there) we were able to read orientation data straight from our IMU which will be vital for us in implementing our 'deep sleep' mode.
