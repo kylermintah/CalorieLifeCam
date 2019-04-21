@@ -1,16 +1,14 @@
-## ESE 350 Project
+# ESE 350 Project
 
-You can use the [editor on GitHub](https://github.com/kylermintah/CalorieLifeCam/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
+## Project Overview
 ![Image](docs/20190421_041634.jpg)
 
+Write here
 
-[Link](url) and ![Image](src)
-```
+## Blog
+### Week 1
+![Image](docs/20190421_135823.gif)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Support or Contact
 
