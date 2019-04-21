@@ -27,7 +27,7 @@ Taking a break from the camera, we  went on to learn how to use the UART Rx/Tx p
 
 ![Image](docs/20190421_152900.gif)
 
-We switched cameras from ArduCam to a much more adaptable OV7670 w/out FIFO and finally managed to process our image! This camera only has minimal dependencies on the Arduino library as opposed tothe ArduCam. We are still awaiting the shipment of an ESP32 dedicated camera.
+We switched cameras from ArduCam to a much more adaptable OV7670 w/out FIFO and finally managed to process our image! This camera only has minimal dependencies on the Arduino library as opposed to the ArduCam. We are still awaiting the shipment of an ESP32 dedicated camera.
 
 ![Image](docs/april21circuit.jpg)
 
