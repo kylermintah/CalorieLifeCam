@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/kylermintah/CalorieLifeCam
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-![Image]()
+![Image](docs/20190421_041634.jpg)
 
 
 [Link](url) and ![Image](src)
