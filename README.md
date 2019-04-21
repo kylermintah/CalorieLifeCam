@@ -54,4 +54,4 @@ In any case, we have ordered an ESP32 dedicated camera that hopefully we will be
 
 ### Support or Contact
 
-Having trouble reaching us? Check out our [website](https://www.silblu.com) or [contact us](mailto:kmintah@seas.upenn.edu) and we’ll help you sort it out.
+Having trouble reaching us? Check out our [website](https://www.silkblu.com) or [contact us](mailto:kmintah@seas.upenn.edu) and we’ll help you sort it out.
