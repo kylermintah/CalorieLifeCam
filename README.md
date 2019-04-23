@@ -68,10 +68,10 @@ Had we had more time, we would have added a VCC and GND layer with vias leading 
 
 We have now pivoted back to the IMU subsytem and are focussed on integrating it with the camera functionality. 
 
-![Image](docs/ErrorMessage.png)
-
-We ran into problems with the ESP32 scheduler and the task watchdog timer. 
+Unfortunately the integration was not a simple task. We eventually ran into problems with the ESP32 scheduler and the task watchdog timer. 
 The default clock tick rate is 100Hz which is configurable but generally 100 Hz provides a good balance between ISR overhead and responsiveness.
+
+![Image](docs/ErrorMessage.png)
 
 The implication of this was that portTICK_PERIOD_MS was 10ms per tick. Hence a 2ms vTaskDelay corresponds a 0 tick delay, which means no delay at all, which is interpreted as "yield to higher priority tasks, otherwise keep running". Thus our io_task may be starving our lower priority tasks, such as the Idle task, if it never blocks waiting for something else to happen.
 
