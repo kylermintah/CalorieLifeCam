@@ -51,6 +51,13 @@ In any case, we have ordered an ESP32 dedicated camera that hopefully we will be
 
 ## Week 3 (4/22/19)
 
+![Image](docs/AltiumSplash)
+Although we had been behind schedule we managed to design a multilayer PCB in Altium. 
+
+![Image](docs/PCB123)
+
+We did not have much time to review it as we were behind schedule troubleshooting camera functionality as it was. 
+Had we had more time, we would have added a VCC and GND layer and implemented a more stringent design rule check. We felt our routes may have been too close together and too thin.
 
 ### Support or Contact
 
