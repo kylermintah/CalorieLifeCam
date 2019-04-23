@@ -57,7 +57,7 @@ Although we had been behind schedule we managed to design a multilayer PCB in Al
 
 ![Image](docs/PCB123.PNG)
 
-We did not have much time to review it as we were already behind schedule due to days of troubleshooting camera functionality. 
+We did not have much time to review it as we were already behind schedule due to days of troubleshooting and writing our abandoned custom libraries to enable camera functionality. 
 Had we had more time, we would have added a VCC and GND layer with vias leading to each to simplify our routing. We also would have liked to implement a more stringent design rule check. We felt our routes may have been too close together and too thin.
 
 ![Image](docs/SchematicSmaller.PNG)
