@@ -75,9 +75,13 @@ The default clock tick rate is 100Hz which is configurable but generally 100 Hz 
 
 The implication of this was that portTICK_PERIOD_MS was 10ms per tick. Hence a 2ms vTaskDelay corresponds a 0 tick delay, which means no delay at all, which is interpreted as "yield to higher priority tasks, otherwise keep running". Thus our io_task may be starving our lower priority tasks, such as the Idle task, if it never blocks waiting for something else to happen.
 
-We read that to solve this we can try disabling the watchdog timer but we became weary of this as this would starve lower priority tasks like the idel task which is actually utilized for cleanup of deleted tasks. The FreeRTOS timer task also runs at low priority and hence may be perpetually blocked.
+We read that to solve this we can try disabling the watchdog timer but we became weary of this as this would starve lower priority tasks like the idle task which is actually utilized for cleanup of deleted tasks. The FreeRTOS timer task also runs at low priority and hence may be perpetually blocked.
 
 We are still currently exporing a fix to this.
+
+![Image](docs/WatchdogTrigger.PNG)
+
+Watchdog triggering
 
 
 
