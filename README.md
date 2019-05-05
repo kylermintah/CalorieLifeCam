@@ -1,12 +1,14 @@
 # ESE 350 Project
 
-## Project Overview
+This project is maintained by [Kyler Mintah](https://github.com/kylermintah) & [Ransford Antwi](https://github.com/masterford)
+
+# Overview
 ![Image](docs/20190421_041634.jpg)
 
 We are building a miniature camera that serves as a wearable dietary documentation aid for patients with nutritional needs. The device uploads photos it takes to a webserver where the photos are filtered for food
 
-## Blog
-### Week 1 (4/8/19)
+# Blog
+## Week 1 (4/8/19)
 ![Image](docs/20190421_135823.gif)
 
 A large amount of our time was dominated by learning to use and configure our ESP32.
@@ -17,11 +19,12 @@ We found ourselves embroiled in setting up low-level espressif software, OS envi
 
 Up until this point we had been using an ArduCam which had all its support and libraries based on the arduino library. We spent a lot of time rewriting the Arduino libraries into our own libraries in pure C/C++ and while we feel we were close to acheiving this, the endeavour proved to take up too much time. Instead of reinventing the wheel, we decided to shift focus for week 2.
 
-**Circuit End of Week 1**
-
+### Circuit End of Week 1
 ![Image](docs/IMG-20190409-WA0017.jpeg)
 
-### Week 2 (4/15/19)
+
+
+## Week 2 (4/15/19)
 
 Taking a break from the camera, we  went on to learn how to use the UART Rx/Tx pins to interface a Razor IMU with the ESP32. After mapping our device pinout (as there seem to be a couple of ESP32 models out there with different pinouts) we were able to read orientation data straight from our IMU which will help us implement our 'deep sleep' mode based on device orientation.
 
@@ -29,11 +32,11 @@ Taking a break from the camera, we  went on to learn how to use the UART Rx/Tx p
 
 We switched cameras from ArduCam to a much more adaptable OV7670 w/out FIFO and finally managed to process our image! This camera only has minimal dependencies on the Arduino library as opposed to the ArduCam. We are still awaiting the shipment of an ESP32 dedicated camera.
 
+### Circuit End of Week 2
 ![Image](docs/april21circuit.jpg)
 
-We setup a hotspot on a phone (as a user would) and connected our system to the network. We relayed the image to  a locally hosted webserver for now. We hope to pull the image for processing using dedicated machine learning libraries to determine whether the patient has captured an image of food or not.
 
-**Circuit End of Week 1**
+We setup a hotspot on a phone (as a user would) and connected our system to the network. We relayed the image to  a locally hosted webserver for now. We hope to pull the image for processing using dedicated machine learning libraries to determine whether the patient has captured an image of food or not.
 
 ![Image](docs/20190421_155116.jpg)
 
@@ -46,9 +49,42 @@ While we were able to successfully capture images using DMA, the images came out
 
 In any case, we have ordered an ESP32 dedicated camera that hopefully we will be able to integrate soon.
 
-### Week 3 (4/22/19)
+## Week 3 (4/22/19)
+
+![Image](docs/AltiumSplash.PNG)
+
+Although we had been behind schedule we managed to design a multilayer PCB in Altium. 
+
+![Image](docs/PCB123.PNG)
+
+We did not have much time to review it as we were already behind schedule due to days of troubleshooting and writing our abandoned custom libraries to enable camera functionality. 
+Had we had more time, we would have added a VCC and GND layer with vias leading to each to simplify our routing. We also would have liked to implement a more stringent design rule check. We felt our routes may have been too close together and too thin.
+
+![Image](docs/SchematicSmaller.PNG)
+
+**IMU Update**
+
+![Image](docs/IMURazor.png)
+
+We have now pivoted back to the IMU subsytem and are focussed on integrating it with the camera functionality. 
+
+Unfortunately the integration was not a simple task. We eventually ran into problems with the ESP32 scheduler and the task watchdog timer. 
+The default clock tick rate is 100Hz which is configurable but generally 100 Hz provides a good balance between ISR overhead and responsiveness.
+
+![Image](docs/ErrorMessage.png)
+
+The implication of this was that portTICK_PERIOD_MS was 10ms per tick. Hence a 2ms vTaskDelay corresponds a 0 tick delay, which means no delay at all, which is interpreted as "yield to higher priority tasks, otherwise keep running". Thus our io_task may be starving our lower priority tasks, such as the Idle task, if it never blocks waiting for something else to happen.
+
+We read that to solve this we can try disabling the watchdog timer but we became weary of this as this would starve lower priority tasks like the idle task which is actually utilized for cleanup of deleted tasks. The FreeRTOS timer task also runs at low priority and hence may be perpetually blocked.
+
+We are still currently exporing a fix to this.
+
+![Image](docs/WatchdogTrigger.PNG)
+
+Watchdog triggering
+
 
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble reaching us? Check out our [website](https://www.silkblu.com) or [contact us](mailto:kmintah@seas.upenn.edu) and we’ll help you sort it out.
