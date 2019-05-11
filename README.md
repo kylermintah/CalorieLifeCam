@@ -3,7 +3,7 @@
 This project is maintained by [Kyler Mintah](https://github.com/kylermintah) & [Ransford Antwi](https://github.com/masterford)
 
 # Overview
-![Image](docs/20190421_041634.jpg)
+![Image](docs/overview.jpg)
 
 We are building a miniature camera that serves as a wearable dietary documentation aid for patients with nutritional needs. The device uploads photos it takes to a webserver where the photos are filtered for food
 
