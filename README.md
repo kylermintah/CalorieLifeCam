@@ -106,9 +106,17 @@ The image below was taken during the demo. We took a picture of pizza and Watson
 
 ![Image](docs/pizza.dib)     ![Image](docs/pizzaWatson.png)
 
-The next image is a bowl of almonds and Watson was able to categorize it as an edible nut. not specifically almods but it's still a great result.
+The next image is a bowl of almonds and Watson was able to categorize it as an edible nut. not specifically almonds but it's still a great result.
 
 ![Image](docs/almonds.jpg)    ![Image](docs/almonds2.dib) ![Image](docs/almondwatson.png)
+
+What happens when you take a picture of a non-food image? Watson tells us it's "non-food" which is perfect for out purposes.
+
+![Image](docs/people.dib)    ![Image](docs/peopleWatson.png) 
+
+
+**Final Prototype**
+![Image](docs/final1.jpg)    ![Image](docs/final2.jpg) 
 
 
 ### Support or Contact
