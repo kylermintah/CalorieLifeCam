@@ -97,7 +97,12 @@ We decided to change our camera module because we were still unsure as to why we
 
 We proceeded to tie up all the loose ends in time for the demo. This involved finally completing the deep sleep mode and triggering the ultra low processor (ULP) mode when the camera was laying flat for a certain period of time. In order to make this a truly wireless device, We added an RGB indicator to let us know what was happening, e.g. when it's connecting to wifi the camera flashes blue, when it's in ULP mode it flashes green, and it also flashes when it's taking an image. We also embedded 3 AA batteries within the casing of the device and used that as a power source.
 
-![Image](docs/battery.jpg) ![Image](docs/battery2.jpg)
+![Image](docs/battery.jpg)     ![Image](docs/battery2.jpg)
+
+We were also able to curl Watson's food recognition platform and use the images form our camera to recognise and distinguish between different foods!
+**Results**
+![Image](docs/pizza.dib)     ![Image](docs/pizzaWatson.png)
+
 
 ### Support or Contact
 
