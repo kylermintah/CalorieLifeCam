@@ -90,6 +90,14 @@ We fixed our task scheduling errors by multithreading the system and running the
 
 ![Image](docs/cloud2.png)
 
+## Public demo + Results(5/9/19)
+We decided to change our camera module because we were still unsure as to why we were unable to generate any images. We also re-built the project on a protoboard due to potentially faulty connections on the PCB and we reassigned some of the camera pins on the ESP-32. These changes proved to be the difference maker and we were able to finally generate decent images.
+
+![Image](docs/kyler.jpg)
+
+We proceeded to tie up all the loose ends in time for the demo. This involved finally completing the deep sleep mode and triggering the ultra low processor (ULP) mode when the camera was laying flat for a certain period of time. In order to make this a truly wireless device, We added an RGB indicator to let us know what was happening, e.g. when it's connecting to wifi the camera flashes blue, when it's in ULP mode it flashes green, and it also flashes when it's taking an image. We also embedded 3 AA batteries within the casing of the device and used that as a power source.
+
+![Image](docs/battery.jpg) ![Image](docs/battery2.jpg)
 
 ### Support or Contact
 
