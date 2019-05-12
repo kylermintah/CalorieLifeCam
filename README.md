@@ -82,10 +82,13 @@ We are still currently exporing a fix to this.
 ![Image](docs/WatchdogTrigger.PNG)
 
 ## Week 4 (4/27/19)
-We fixed our task scheduling errors by multithreading the system and running the camera and IMU task in parallel. This helped prevent the starvation of certain task. The PCB was completed in time for the baseline demo, however we were not able to generate any images from the camera, not even the discolored ones we produced earlier which was quite a shock. We were able to integrate our project with Google Cloud Services in order to send telemetry data as well as possibly store images on the cloud. We opted not to store the images on the cloud yet due to the fact that we would have to pay for cloud storage but it's certainly possible since we are already able to send telemetry data.
+We fixed our task scheduling errors by multithreading the system and running the camera and IMU task in parallel. This helped prevent the starvation of certain tasks. The PCB was completed in time for the baseline demo, however we were not able to generate any images from the camera, not even the discolored ones we produced earlier which was quite a shock. We were able to integrate our project with Google Cloud Services via an MQTT bridge in order to send telemetry data as well as possibly store images on the cloud. We opted not to store the images on the cloud yet due to the fact that we would have to pay for cloud storage but it's certainly possible since we are already able to send telemetry data.
 
 ![Image](docs/googlecloud.png)
 
+![Image](docs/cloud1.png)
+
+![Image](docs/cloud2.png)
 
 
 ### Support or Contact
