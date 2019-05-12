@@ -116,6 +116,7 @@ What happens when you take a picture of a non-food image? Watson tells us it's "
 
 
 **Final Prototype**
+
 ![Image](docs/final1.jpg)    ![Image](docs/final2.jpg) 
 
 
