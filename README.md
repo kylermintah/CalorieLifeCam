@@ -102,8 +102,13 @@ We proceeded to tie up all the loose ends in time for the demo. This involved fi
 We were also able to curl Watson's food recognition platform and use the images form our camera to recognise and distinguish between different foods!
 
 **Results**
+The image below was taken during the demo. We took a picture of pizza and Watson was able to categorize it as pizza with 78.8% accuracy.
 
 ![Image](docs/pizza.dib)     ![Image](docs/pizzaWatson.png)
+
+The next image is a bowl of almonds and Watson was able to categorize it as an edible nut. not specifically almods but it's still a great result.
+
+![Image](docs/almonds.jpg)    ![Image](docs/almonds2.dib) ![Image](docs/almondwatson.png)
 
 
 ### Support or Contact
