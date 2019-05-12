@@ -100,7 +100,9 @@ We proceeded to tie up all the loose ends in time for the demo. This involved fi
 ![Image](docs/battery.jpg)     ![Image](docs/battery2.jpg)
 
 We were also able to curl Watson's food recognition platform and use the images form our camera to recognise and distinguish between different foods!
+
 **Results**
+
 ![Image](docs/pizza.dib)     ![Image](docs/pizzaWatson.png)
 
 
