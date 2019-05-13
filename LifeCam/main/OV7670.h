@@ -27,6 +27,9 @@ class OV7670: public I2SCamera
   void QQVGARGB565();
   void QQQVGA();
   void QQQVGARGB565();
+  void Ford();
+  void Fordo();
+
   void inline writeRegister(unsigned char reg, unsigned char data)
   {
     i2c.writeRegister(ADDR, reg, data);
